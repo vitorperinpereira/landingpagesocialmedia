@@ -1,0 +1,88 @@
+Você é um designer + frontend sênior criando uma landing page premium (tema claro) para o produto:
+
+GMV Social IA
+Gestão e produção de conteúdo para mídias sociais de clínicas odontológicas com Inteligência Artificial.
+
+REQUISITO PRINCIPAL: O FUNDO DO SITE TEM QUE TER UM “HERO BACKGROUND” ESTILO O DO POLVO
+Quero um visual semelhante ao conceito do polvo do exemplo: uma figura orgânica forte, dramática e artística no background, com tentáculos/curvas envolvendo o conteúdo, mas SEM escurecer a página inteira, porque o tema é claro.
+
+ESTÉTICA GERAL
+- Tema claro premium (SaaS enterprise)
+- Fundo base: branco/off-white (#FAFAFA ou #FFFFFF)
+- Texto: grafite (#111111)
+- Cor de destaque: amarelo GMV (#FFC400) para CTAs e detalhes
+- Acentos secundários: cinza frio (#E6E8EB, #B8BDC5) para bordas e separadores
+- Nada azul “hospital”, nada dentão clichê
+- Visual tecnológico + sofisticado + clean
+
+FUNDO ESTILO POLVO (DETALHES OBRIGATÓRIOS)
+1) Elemento principal do fundo: um “polvo abstrato” ou “tentáculos orgânicos”
+   - Pode ser uma ilustração vetorial premium ou render 3D suave
+   - Os tentáculos devem ter curvas grandes, elegantes e envolver a área do Hero
+   - Não pode ser cartoon e nem infantil
+   - Tem que parecer arte de marca, não clipart
+
+2) Como ele aparece no tema claro
+   - O polvo NÃO pode ser preto chapado
+   - Use um tratamento tipo “duotone suave” ou “tinta translúcida”
+   - Cores do polvo: grafite bem diluído + leves toques de amarelo GMV em highlights
+   - Opacidade baixa (entre 6% e 18%) para não brigar com o texto
+   - Use blur suave em algumas áreas para profundidade e foco no conteúdo
+
+3) Composição e posicionamento
+   - No Hero, o polvo deve ficar maior no lado direito e subir parcialmente atrás do H1
+   - Tentáculos podem atravessar o meio da tela em diagonais suaves, criando movimento
+   - Nunca colocar tentáculo passando por cima do CTA ou textos sem máscara
+   - Use “mask/gradient fade” para o polvo desaparecer perto do texto
+
+4) Camadas do fundo (bem específico)
+   - Layer 1: Base branco/off-white
+   - Layer 2: “Noise/grain” bem sutil (2% a 4%) para dar textura premium
+   - Layer 3: Um gradiente radial bem leve (ex: do amarelo muito suave para transparente) atrás do CTA
+   - Layer 4: O polvo/tentáculos em baixa opacidade com sombras suaves
+   - Layer 5: Glow discreto em amarelo GMV apenas em pontos estratégicos (não neon)
+
+IMPLEMENTAÇÃO NO CÓDIGO (REPLIT)
+- Use React + Tailwind CSS
+- Hero deve ter background composto por:
+  - Um <div> absoluto com um SVG do polvo (ou imagem .png/.webp) como background-image
+  - Um overlay com gradient-mask para controlar legibilidade
+  - Um “grain overlay” feito com CSS (background-image com noise svg/png repetido)
+
+- O fundo precisa ser RESPONSIVO:
+  - No mobile: o polvo fica mais abaixo, mais suave, e não ocupa o topo inteiro
+  - No desktop: o polvo aparece mais dramático no lado direito
+
+- Inclua classes Tailwind e/ou CSS custom no arquivo para:
+  - background blend
+  - mask-image (gradiente)
+  - opacity control
+  - blur
+  - pointer-events none no background
+
+SEÇÕES DA PÁGINA (com o fundo ainda presente de forma elegante)
+1) Navbar minimalista
+2) Hero com o polvo no fundo
+3) “O problema”
+4) “A solução”
+5) “O que você recebe”
+6) “Como funciona”
+7) Provas/resultados
+8) Planos
+9) FAQ
+10) CTA final
+11) Footer
+
+COPY DO HERO (usar exatamente)
+H1: “Conteúdo odontológico com IA, com método e constância.”
+Sub: “A gente planeja, produz e organiza seu Instagram com estratégia de clínica e velocidade de IA. Sem post aleatório e sem depender de inspiração.”
+CTA primário: “Quero meu conteúdo pronto”
+CTA secundário: “Ver como funciona”
+
+REGRAS
+- Nada de estética genérica de agência
+- Nada de artes coloridas aleatórias
+- O polvo precisa parecer “assinatura” da marca, com cara de design caro
+- O texto tem que ficar sempre 100% legível
+- Não use lorem ipsum, escreva textos reais voltados para dentistas
+- Entregar página pronta para rodar no Replit
